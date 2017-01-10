@@ -49,10 +49,10 @@ def classify0(intX,dataSet,labels,k):
 def datingClassTest():
     hoRatio=0.10
     datetingDataMat,datingLabels= file2matrix(filePath)
-    fig = plt.figure()
-    ax = fig.add_subplot(111)
-    ax.scatter(datetingDataMat[:,1], datetingDataMat[:,2], 15.0*array(datingLabels), 15.0*array(datingLabels))
-    plt.show()
+    # fig = plt.figure()
+    # ax = fig.add_subplot(111)
+    # ax.scatter(datetingDataMat[:,1], datetingDataMat[:,2], 15.0*array(datingLabels), 15.0*array(datingLabels))
+    # plt.show()
     normDataSet,ranges,minVals=autoNorm(datetingDataMat)
     m=normDataSet.shape[0]
     numTestVects=int(m*hoRatio)
